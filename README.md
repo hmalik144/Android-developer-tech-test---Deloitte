@@ -16,7 +16,7 @@ Permissions : Internet
 ## Built With
 
 * [Kotlin](https://kotlinlang.org/) - Kotlin 
-* [Android Studio] (https://developer.android.com/studio) - Android Studio 
+* [Android Studio](https://developer.android.com/studio) - Android Studio 
 
 ## Authors
 
