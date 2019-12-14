@@ -4,7 +4,7 @@ An app to display the current stock listed in the products list api.
 
 ## Requirements
 
-Minimum android SDK version 23, Android 6.0.0 (Marshmellow)
+Minimum android SDK version 16
 Permissions : Internet
 
 ## Features
