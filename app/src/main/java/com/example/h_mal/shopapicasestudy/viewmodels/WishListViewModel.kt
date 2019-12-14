@@ -24,7 +24,8 @@ class WishListViewModel(
         val response =
             AsyncApiCall(
                 "https://private-anon-f3c1195210-ddshop.apiary-mock.com/products",
-                wishResponseListener
+                wishResponseListener,
+                "Failed to insert item"
             )
                 .execute()
                 .get()

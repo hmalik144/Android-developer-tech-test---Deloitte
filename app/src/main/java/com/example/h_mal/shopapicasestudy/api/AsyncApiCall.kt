@@ -10,7 +10,8 @@ import java.net.URL
 
 class AsyncApiCall(
     val urlString : String,
-    val callBack : ResponseListener?
+    val callBack : ResponseListener?,
+    val toastErrorString : String
 ): AsyncTask<String, Void, String>() {
 
     override fun onPreExecute() {
@@ -50,7 +51,7 @@ class AsyncApiCall(
 
     override fun onPostExecute(result: String) {
         if (result.isEmpty()){
-            callBack?.onFailure("Failed to retrieve")
+            callBack?.onFailure(toastErrorString)
         }else{
             callBack?.onSuccess()
         }

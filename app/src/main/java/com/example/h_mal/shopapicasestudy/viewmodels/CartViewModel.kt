@@ -24,7 +24,8 @@ class CartViewModel(
         val response =
             AsyncApiCall(
                 "https://private-anon-21a48b3d0e-ddshop.apiary-mock.com/cart/1",
-                cartResponseListener
+                cartResponseListener,
+                "Failed to delete item"
             )
                 .execute()
                 .get()
@@ -35,11 +36,6 @@ class CartViewModel(
         }
 
         return response
-    }
-
-    fun getTotalPrice(): String{
-
-        return ""
     }
 
 }

@@ -25,7 +25,8 @@ class MainViewModel(
         val jsonResponse =
             AsyncApiCall(
                 "https://private-anon-f3c1195210-ddshop.apiary-mock.com/products",
-                responseListener
+                responseListener,
+                "Failed To retrieve list"
             )
             .execute()
             .get()
